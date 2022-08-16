@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+
+{% block title %}社区画像查询系统{% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/portrait.css')}}">
+    <style type="text/css">
+        h1{font-family:微软雅黑;font-weight: bold;font-size: 40px;color: #ff00de; margin-top: 100px;margin-left: 150px;}
+    </style>
+{% endblock %}
+
+{% block main %}
+      <div class="beijing"> <img src="{{ url_for('static', filename='images/社区背景.png') }}" alt="社区背景"></div>
+      <!--查询框-->
+      <form method="POST">
+          <div class="chaxunk">
+             <input type="text" name="xq_id" placeholder="小区名称..">
+             <button type="submit" class="button">生成画像</button>
+          </div>
+      </form>
+      <h1>请输入待查询社区的名称</h1>
+{#      <h3>该系统仅保留用户近一个月的访问记录</h3>#}
+{% endblock %}
