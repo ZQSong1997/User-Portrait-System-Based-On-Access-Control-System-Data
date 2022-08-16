@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{#父模板#}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/base.css')}}">
+    {% block head %}{% endblock %}
+</head>
+<body>
+  <!--顶部导语-->
+  <div class="topk">
+      <img src="{{ url_for('static', filename='images/daoyu.png') }}" alt="系统导语">
+      <p>基于门禁系统数据的社区用户画像</p>
+  </div>
+  <!--用户数据更新时间-->
+  {% block sjgxsj %}{% endblock %}
+  <!--左侧导航栏-->
+  <div class="sidenav">
+      <div class="icos"><img src="https://static.runoob.com/images/mix/img_avatar.png">   <a href="{{url_for('login')}}">管理员登录</a></div>
+      <div class="icos"><img src="{{url_for('static', filename='images/用户画像查询.png') }}"> <a href="{{url_for('inquery')}}">用户画像查询</a></div>
+      <div class="icos"><img src="{{url_for('static', filename='images/社区画像查询.png') }}"> <a href="{{url_for('XqInquery')}}">社区画像查询</a></div>
+      <div class="icos"><img src="{{url_for('static', filename='images/用户注册.png') }}"> <a href="{{url_for('regist')}}">添加管理员</a></div>
+      <div class="icos"><img src="{{url_for('static', filename='images/修改密码.png') }}"> <a href="{{url_for('change')}}">修改密码</a></div>
+      <div class="icos"><img src="{{url_for('static', filename='images/安全退出.png') }}"> <a href="{{url_for('logout')}}">安全退出</a></div>
+  </div>
+  <!--变动栏-->
+  <div class="main_k">{% block main %}{% endblock %}</div>
+  <!--底部公司信息-->
+  <div class="botk">XX有限公司 版权所有©2019-2020 技术支持电话：023-00000000</div>
+  <!--让每个页面都可以获取闪现信息闪现-->
+  {% for item in get_flashed_messages() %}
+      <div id="flashk">{{ item }}</div>
+  {% endfor %}
+</body>
+</html>
