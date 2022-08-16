@@ -1,0 +1,71 @@
+/*小区名称*/
+#xqmc{
+	z-index:-10;
+	position:fixed;
+	left:1250px;top:10px;
+	font-family:微软雅黑;
+	font-size: 16px;
+	font-weight: bold;
+}
+/*数据更新时间*/
+#uptime{
+	z-index:-10;
+	position:fixed;
+	left:1250px;top:35px;
+	font-family:微软雅黑;
+	font-size: 16px;
+	font-weight: bold;
+}
+/*住房类型画像图*/
+.zhufang img{
+	/*z-index:15;*/
+	position:absolute;
+	left:55px;top:60px;
+	margin: 0 auto;
+	max-width: 247px;
+	max-height:260px;
+	/*border: 1px solid #ffa762;*/
+}
+/*汽车类型画像图*/
+.cars img{
+	position:absolute;
+	left:50px;top:340px;
+	margin: 0 auto;
+	max-width: 340px;
+	max-height:260px;
+}
+/*小区近30日访问量画像图*/
+.fwl img{
+	position:absolute;
+	left:400px;top:25px;
+	margin: 0 auto;
+	max-width: 620px;
+	max-height:300px;
+}
+/*年龄段分布画像图*/
+.agegroup img{
+	position:absolute;
+	left:430px;top:340px;
+	margin: 0 auto;
+	max-width: 650px;
+	max-height:270px;
+}
+/*开门方式情况画像图*/
+.kmfs img{
+	position:absolute;
+	left:960px;top:40px;
+	margin: 0 auto;
+	max-width: 340px;
+	max-height:300px;
+	/*border: 1px solid #ffa762;*/
+}
+/*房价水平画像图*/
+.price img{
+	position:absolute;
+	left:935px;top:343px;
+	margin: 0 auto;
+	max-width: 370px;
+	max-height:300px;
+	/*border: 1px solid #ffa762;*/
+}
+
