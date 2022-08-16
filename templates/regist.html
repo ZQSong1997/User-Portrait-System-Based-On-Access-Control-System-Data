@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+
+{% block title %}用户注册{% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/login.css')}}">
+    <script type="text/javascript" src="../static/JavaScript/login.js"></script>
+{% endblock %}
+
+{% block main %}
+    <div class="beijing"> <img src="{{ url_for('static', filename='images/背景.png') }}" alt="背景图片"></div>
+    <form method="POST">
+        <div  class="login_box">
+            <div class="imgcontainer">
+                 <img src="{{url_for('static', filename='images/用户注册.png') }}" class="avatar">
+            </div>
+            <div class="container">
+                <input type="text" placeholder="输入用户名" name="username" required>
+                <input type="password" placeholder="输入密码" name="password1" required>
+                <input type="password" placeholder="确认密码" name="password2" required>
+                <button type="submit">注册</button>
+            </div>
+        </div>
+    </form>
+{% endblock %}
