@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+
+{% block title %}修改密码{% endblock %}
+
+{% block head %}
+     <link rel="stylesheet" href="{{ url_for('static',filename='css/login.css')}}">
+{% endblock %}
+
+{% block main %}
+     <div class="beijing"> <img src="{{ url_for('static', filename='images/背景.png') }}" alt="背景图片"></div>
+     <form method="POST">
+        <div  class="login_box">
+            <div class="imgcontainer">
+                <img src="{{url_for('static', filename='images/修改密码.png') }}" class="avatar">
+            </div>
+            <div class="container">
+                <input type="password" placeholder="输入原密码" name="oldpassword" required>
+                <input type="password"  placeholder="输入新密码" name="newpassword1" required>
+                <input type="password"  placeholder="确认新密码" name="newpassword2" required>
+                <button type="submit">确认</button>
+            </div>
+        </div>
+    </form>
+{% endblock %}
