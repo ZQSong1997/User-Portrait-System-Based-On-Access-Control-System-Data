@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--继承父模板-->
+{% extends 'base.html' %}
+
+{% block title %}社区画像查询{% endblock %}
+
+{% block head %}
+      <link rel="stylesheet" href="{{ url_for('static',filename='css/XqPortrait.css')}}">
+{% endblock %}
+
+{% block sjgxsj %}
+    <div id="xqmc">{{"当前小区: %s" %xqmc}}</div>
+    <div id="uptime">{{ "数据更新时间: %s" %GXSJ }}</div>
+{% endblock %}
+
+{% block main %}
+      <!--查询框-->
+      <form method="POST">
+          <div class="chaxunk">
+             <input type="text" name="xq_id" placeholder="请输入小区id..">
+             <button type="submit" class="button">生成画像</button>
+          </div>
+      </form>
+      <!--小区用户群体属性分析-->
+      <div class="zhufang"><img src="{{ url_for('static', filename='images/社区画像结果/住房类型情况画像.png') }}"></div>
+      <div class="cars"><img src="{{ url_for('static', filename='images/社区画像结果/汽车类型情况画像.png') }}"></div>
+      <div class="fwl"><img src="{{ url_for('static', filename='images/社区画像结果/小区近28天日访问量情况画像.png') }}"></div>
+      <div class="agegroup"><img src="{{ url_for('static', filename='images/社区画像结果/年龄段和性别分布情况画像.png') }}"></div>
+      <div class="kmfs"><img src="{{ url_for('static', filename='images/社区画像结果/开门方式情况画像.png') }}"></div>
+      <div class="price"><img src="{{ url_for('static', filename='images/社区画像结果/当地房价水平对比情况画像.png') }}"></div>
+{% endblock %}
