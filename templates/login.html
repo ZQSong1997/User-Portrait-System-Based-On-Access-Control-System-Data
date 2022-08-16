@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+
+{% block title %}登录用户画像系统{% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/login.css')}}">
+{#    <script type="text/javascript" src="../static/JavaScript/login.js"></script>#}
+{% endblock %}
+
+{% block main %}
+    <div class="beijing"> <img src="{{ url_for('static', filename='images/背景.png') }}" alt="背景图片"></div>
+    <!--登录表单-->
+    <form method="POST">  {# method="POST"不能少，否则该表单不能上传数据 #}
+        <div  class="login_box">
+            <div class="imgcontainer">
+                <img src="https://static.runoob.com/images/mix/img_avatar.png" alt="Avatar" class="avatar">
+            </div>
+            <div class="container">
+                <label><b>Username</b></label>
+                <input type="text" placeholder="输入用户名" name="username" required>
+                <label><b>Password</b></label>
+                <input type="password" placeholder="输入密码" name="upassword" required>
+                <button type="submit">登陆</button>
+            </div>
+        </div>
+    </form>
+{% endblock %}
+
+
