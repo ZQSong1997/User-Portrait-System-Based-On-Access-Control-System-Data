@@ -1,0 +1,200 @@
+/*用户画像模块*/
+
+/*页面背景*/
+.beijing img{
+	z-index:-10;
+    position:absolute;
+	width: 100%;
+	max-height:100%;
+	margin: 0 auto;
+}
+/*当前用户*/
+#nowuser{
+	z-index:-12;
+	position:fixed;
+	left:1200px;top:10px;
+	font-family:微软雅黑;
+	font-size: 16px;
+	font-weight: bold;
+}
+/*小区名称*/
+#xqmc{
+	z-index:-11;
+	position:fixed;
+	left:1350px;top:10px;
+	font-family:微软雅黑;
+	font-size: 16px;
+	font-weight: bold;
+}
+/*数据更新时间*/
+#uptime{
+	z-index:-10;
+	position:fixed;
+	left:1200px;top:35px;
+	font-family:微软雅黑;
+	font-size: 16px;
+	font-weight: bold;
+}
+/*消费水平指数*/
+#xfspzs{
+	z-index:20;
+	position:absolute;
+	left:520px;top:1px;
+	text-align: center;
+	font-family:微软雅黑;
+	font-size: 25px;
+	font-weight: bold;
+	color: #ff3139;
+}
+
+/*用户画像图*/
+.huax img{
+	z-index:15;
+	position:absolute;
+	top:30px;
+	left:500px;
+	margin: 0 auto;
+	text-align: center;
+	max-width: 280px;
+	max-height:580px;
+}
+
+/*索引模块*/
+/*基本属性索引*/
+.syone{
+	z-index:16;
+	position:absolute;top:65px;left:350px;
+	/*border: 1px solid #ffa762;*/
+	margin: 0 auto;
+	padding: 10px 0;
+}
+/*出行属性索引*/
+.sytwo{
+	z-index:17;
+	position:absolute;top:40px;right:390px;
+	margin: 0 auto;
+	padding: 10px 0;
+}
+/*住房属性索引*/
+.sythree{
+	z-index:18;
+	position:absolute;top:310px;right:450px;
+	margin: 0 auto;
+	padding: 10px 0;
+}
+/*消费属性索引*/
+.syfour{
+	z-index:19;
+	position:absolute;top:340px;left:360px;
+	margin: 0 auto;
+	padding: 10px 0;
+}
+
+/*基本属性表*/
+.tabone{
+	z-index:21;
+	position:absolute;top:50px;left:170px;
+	width:18%;
+}
+.tabone tr{text-align:center;}
+.tabone caption{
+	font-family: 微软雅黑;
+	font-size: 25px;
+	font-weight: bold;
+	color: #ffd97f;
+	padding: 8px;
+}
+/*出行属性表*/
+.tabtwo{
+	z-index:20;
+	position:absolute;top:20px;right:190px;
+	width:20%;
+}
+.tabtwo tr{text-align:center;}
+.tabtwo caption{
+	font-family: 微软雅黑;
+	font-size: 25px;
+	font-weight: bold;
+	color: #9ae2ff;
+	padding: 8px;
+}
+/*住房属性表*/
+.tabthree{
+	z-index:22;
+	position:absolute;top:330px;right:250px;
+	width:20%;
+}
+.tabthree tr{text-align:center;}
+.tabthree caption{
+	font-family: 微软雅黑;
+	font-size: 25px;
+	font-weight: bold;
+	color: #fc5bff;
+	padding: 8px;
+}
+/*所有表格的内边距*/
+table tr td{padding: 8px;}
+/*基本属性表左侧背景*/
+.jlb{ background: #ffc44b !important;}
+/*基本属性表右侧背景*/
+.jrb{ background: rgba(255, 210, 90, 0.61) !important;}
+/*出行属性表左侧背景*/
+.clb{background: #7bbaff !important;}
+/*出行属性表右侧背景*/
+.crb{background: rgba(153, 166, 255, 0.6) !important;}
+/*住房属性表左侧背景*/
+.zlb{background: #ff6ae1 !important;}
+/*住房属性表右侧背景*/
+.zrb{background: rgba(254, 123, 255, 0.61) !important;}
+
+
+/*消费人群划分模块*/
+.xfrq{
+	z-index:22;
+	position:absolute;top:390px;left:70px;
+	width:420px;
+	/*border: 1px solid #ff5546;*/
+}
+.xfrq div{
+  text-align: center;
+  font-weight:bold;
+  font-family: 楷体;
+  color: white;
+  display:inline-block;/*必须有这条语句才能让多个div块在一行显示*/
+  border-radius: 50%;/*设置为50%就是圆形*/
+  margin: 10px ;
+}
+.xfrq p{
+	position:relative;left:130px;
+	font-family: 微软雅黑;
+	font-size: 25px;
+	font-weight: bold;
+    color: #ff3139;
+}
+
+/*3个圆标签*/
+.xfrq .circlet1{
+	 font-size: 18px;
+	 width: 100px;
+     height:100px;
+	 line-height:100px;/*需要设置成和上面一样高*/
+	 /*background-color: #fe7bff;*/
+	 background-color: #ffcf68;
+}
+.xfrq .circlet2{
+	 font-size: 18px;
+	 width: 100px;
+     height:100px;
+	 line-height:100px;
+	 /*background-color: #ed56ed;*/
+	 background-color: #81d2ff;
+}
+.xfrq .circlet3{
+	 font-size: 18px;
+	 width: 100px;
+     height:100px;
+	 line-height:100px;
+	 background-color: #f04eee;
+	 /*background-color: #ff47ca;*/
+}
+
