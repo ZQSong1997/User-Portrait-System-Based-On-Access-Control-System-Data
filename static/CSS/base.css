@@ -1,0 +1,134 @@
+@charset "utf-8";
+/* CSS父模板 */
+
+/*顶部导语模块*/
+.topk{
+	/*z-index:10;*/
+	position:fixed;left:0;right:0;top:0;
+	background-color: rgba(201, 218, 255, 0.7);
+	border:2px solid rgba(113, 221, 222, 0.9);
+	text-align: center;
+	max-width: 100%;
+	height:65px;
+    margin: 0 auto;
+}
+.topk img{
+	/*z-index:11;*/
+	position:absolute;
+	left:450px;
+	max-width:55px;
+	max-height:65px;
+    margin: 0 auto;
+	padding:0;
+}
+.topk p{
+	/*z-index:12;*/
+	left:130px;
+	font-family:微软雅黑;
+	font-size: 30px;
+	font-weight: bold;
+	color: #b35dff;
+	padding: 10px;
+	margin: 0 auto;
+}
+
+/*左侧导航栏模块*/
+/*框架*/
+.sidenav {
+	/*z-index: 10;*/
+	position: fixed;top:72px;left:1px;width:150px;height:513px;
+	border:1px solid #3bb5cc;
+    background: #eee;
+    overflow-x: hidden;
+    padding: 5px 8px 100px;
+}
+/*图标*/
+.sidenav .icos img{
+	position:absolute;left:2px;
+	max-width: 31px;
+	max-height: 31px;
+	/*margin: 5px;*/
+	margin: 10px;
+}
+/*字体*/
+.sidenav .icos a{
+    text-decoration: none;/*text-decoration属性主要是用来删除链接的下划线：*/
+    font-size: 17px;
+    color: #2196F3;
+    display: block;
+	padding: 15px 2px 5px 40px;
+}
+.sidenav a:hover {color: #064579;}
+
+/*画像主页面+大框*/
+.main_k{
+	z-index: -10;
+	position:fixed;
+	top:71px;
+	left:170px;
+	border: 1px solid #3bb5cc;
+	width: 1360px;
+	height: 618px;
+	margin: 1px;
+}
+
+/*底部导语模块*/
+.botk{
+	/*z-index:10;*/
+	position:fixed;left:0;right:0;bottom: 0;
+	text-align: center;
+	background-color: rgba(178, 222, 221, 0.81);
+	border:2px solid rgba(113, 221, 222, 0.9);
+	max-width: 100%;
+	height:24px;
+	display:block;
+	margin: 0 auto;
+	/*padding: 5px;*/
+}
+
+/*查询框模块*/
+.chaxunk{
+	z-index:10;
+	position:absolute;
+	max-width: 100%;
+	border:2px solid #ccc;
+	background-color: #f8f9ff;
+	padding:1px;
+	margin:0 auto;
+}
+.chaxunk input{
+  width: 240px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('https://static.runoob.com/images/mix/searchicon.png');
+  background-position: 6px 6px;
+  background-repeat: no-repeat;
+  padding: 6px 20px 6px 30px;
+  margin: 0 auto;
+}
+.chaxunk .button{
+    background-color: #4CAF50;
+    border: none;
+	border-radius: 30px;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+	padding: 5px 10px;
+	margin: 0 auto;
+}
+
+/*flash弹出消息模块*/
+#flashk{
+  z-index:-10;
+  position:absolute;left:25px;top:23px;
+  font-family:微软雅黑;
+  font-weight: bold;
+  font-size: 23px;
+  color: #ff00de;
+}
