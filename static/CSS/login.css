@@ -1,0 +1,61 @@
+/* 登录模块 */
+
+/*页面背景*/
+.beijing img{
+	z-index:-10;
+    position:absolute;
+	width: 100%;
+	height:100%;
+	margin: 0 auto;
+}
+
+/*登录盒*/
+.login_box {
+	z-index:20;
+	position:absolute;top:60px;left:220px;
+	height:380px;
+	width:380px;
+	background-color: #faffff;
+	border-radius:6px;
+	box-sizing: border-box;
+}
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 10px 0 0 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 30%;
+    border-radius:50%;
+}
+
+.container {
+    padding: 16px;
+}
