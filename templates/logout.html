@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+
+{% block title %}退出用户画像系统{% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/index.css')}}">
+{% endblock %}
+
+{% block main %}
+    <div class="beijing"> <img src="{{ url_for('static', filename='images/背景.png') }}" alt="背景图片"></div>
+    <div class="biaoyu"><p>已注销 </p></div>
+    <div class="thanks"><p>谢谢使用</p></div>
+{% endblock %}
